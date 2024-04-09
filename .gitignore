@@ -1,0 +1,10 @@
+backup_*
+*__pycache__*
+*__init__*
+output/
+*.png
+*.mp4
+data/
+*.out
+*.obj
+tmp/
