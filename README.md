@@ -1,7 +1,7 @@
 # Degrees of Freedom Matter: Inferring Dynamics from Point Trajectories
 
 
-[page](), [paper]()
+[page](https://yz-cnsdqz.github.io/eigenmotion/DOMA/), [paper]()
 
 
 ## License
