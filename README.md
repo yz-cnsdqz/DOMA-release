@@ -10,16 +10,33 @@ The code is distributed under the [MIT License](https://opensource.org/license/m
 
 
 ## Install
+Clone repository, create an environment with Python 3.10 (e.g. with conda) and install dependencies in `requirements_minimal.txt` via pip:
+
+```bash
+git clone https://github.com/yz-cnsdqz/DOMA-release.git
+cd DOMA-release
+
+# Create environment (skip this if you have it)
+conda create -n doma python=3.10 -y
+conda activate doma
+
+# Install gcc and g++ (if not available in your system)
+conda install -c conda-forge gcc gxx -y 
+
+# Install dependencies
+pip install -r requirements_minimal.txt
 ```
-pip install -r requirements.txt
-```
+
+**Note:** The `requirements_minimal.txt` contains only the packages actually used by this codebase. The original `requirements.txt` includes many additional packages that are not necessary for running DOMA.
+
 Essential python libraries: 
 ```
-PyYAML==6.0.1
 torch==2.0.1
+pytorch3d==0.7.4
 torchgeometry==0.1.2
-trimesh==3.23.5
 numpy==1.23.1
+trimesh==3.23.5
+PyYAML==6.0.1
 ```
 
 ## Data
