@@ -1,0 +1,26 @@
+# Core dependencies for DOMA
+# Python version: 3.10
+# Installation: conda create -n doma python=3.10 -y
+#              conda install -n doma -c conda-forge gcc gxx -y
+#              conda activate doma
+#              pip install -r requirements_minimal.txt
+
+# Deep Learning Framework with CUDA 11.7
+torch==2.0.1 --extra-index-url https://download.pytorch.org/whl/cu117
+torchvision==0.15.2 --extra-index-url https://download.pytorch.org/whl/cu117
+
+# PyTorch3D 0.7.4 (built for Python 3.10, CUDA 11.7, PyTorch 2.0.1)
+pytorch3d @ https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py310_cu117_pyt201/pytorch3d-0.7.4-cp310-cp310-linux_x86_64.whl
+
+# Other packages
+torchgeometry==0.1.2
+trimesh==3.23.5
+point-cloud-utils==0.30.0
+numpy==1.23.1
+scipy==1.10.1
+matplotlib==3.7.2
+tqdm==4.66.1
+tensorboardX==2.6.2.2
+PyYAML==6.0.1
+plotly==5.18.0
+opencv-python==4.8.0.76
